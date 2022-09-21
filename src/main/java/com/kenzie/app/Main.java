@@ -45,9 +45,7 @@ public class Main {
     }
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        //Write main execution code here
         try{
-
         //declare variables
         Scanner userInput = new Scanner(System.in);
         QuizDTO qAndADTO = objectMapper.readValue(CustomHttpClient.sendGET(GET_URL), QuizDTO.class);

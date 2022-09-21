@@ -8,10 +8,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class CustomHttpClient {
-
-    //TODO: Write sendGET method that takes URL and returns response
     public static String sendGET(String URLString) {
-        //** Start of GET request algorithm
         HttpClient client = HttpClient.newHttpClient();
         URI uri = URI.create(URLString);
         HttpRequest request = HttpRequest.newBuilder()
